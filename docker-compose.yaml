@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
   prisma-init:
-    image: subhash83925/prisma-init:1.0.0
+    image: ghcr.io/holashchand/prisma-init:1.0.0
     # networks:
     # - demo-mosip-rc_default
     environment:
