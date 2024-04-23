@@ -1,0 +1,13 @@
+version: '2.4'
+
+services:
+  prisma-init:
+    image: subhash83925/prisma-init:1.0.0
+    # networks:
+    # - demo-mosip-rc_default
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres?schema=public
+
+# networks:
+#   demo-mosip-rc_default:
+#     external: true
