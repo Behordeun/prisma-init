@@ -1,8 +1,7 @@
 FROM node:20.11.0-alpine3.18 AS install
 WORKDIR /app
 COPY . ./
-RUN npm install -g npm@10.8.2 \
-    && npm i
+RUN npm i
 
 FROM node:20.11.0-alpine3.18
 WORKDIR /app
